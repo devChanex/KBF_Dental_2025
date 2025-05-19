@@ -37,7 +37,7 @@ class ServiceClass
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     echo '
                 <div class="row">
-                <div class="col-lg-6"><strong>Smile Save Dental Care</strong></div>
+                <div class="col-lg-6"><strong>KBF Dental Care</strong></div>
                 <div class="col-lg-6" style="text-align:right;">Bringing you, your best smile!</div>
             </div>
             <div class="row">

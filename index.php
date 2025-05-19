@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Smile Save Dental Care</title>
+    <title>KBF Dental Care</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -543,7 +543,7 @@
                                     <div class="form-group col-md-6">
                                         <label for="patientName">Dentist's Name</label>
                                         <input type="text" class="form-control" id="dentistName"
-                                            placeholder="Enter full name" value="Dr. Maria Regina I. Valencia" readonly>
+                                            placeholder="Enter full name" value="Dr. Kathleen B. Factoriza" readonly>
                                         <label>Dentist Signature</label>
                                         <div class="border rounded p-3 signature-box"
                                             style="height: 80px; cursor: pointer;" id="dentist-signature-box">

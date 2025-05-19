@@ -1,6 +1,6 @@
 <?php
-$cards = "bg-success text-white text-lg";
-$systemname = "Smile Save Dental Care";
-$sidebarColor = "bg-gradient-success";
+$cards = "bg-primary text-white text-lg";
+$systemname = "KBF Dental Care";
+$sidebarColor = "bg-gradient-primary";
 $superuser = "sysadmin";
 ?>

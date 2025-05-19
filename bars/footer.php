@@ -5,7 +5,8 @@ echo '
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
              
-        <img src="img/logoRevised.png" class="img-fluid" style="max-height: 30px;">
+       KBF Dental Care &copy; 2025 
+       
    
         </div>
     </div>
