@@ -52,7 +52,7 @@
                             <input type="hidden" value="<?php echo $_GET['clientid']; ?>" id="clientId">
                             <div class="row m-3">
                                 <div class="col-lg-12 d-flex justify-content-center">
-                                    <img src="img/logo.png" alt="Logo">
+                                    <img src="img/kbflogo_2025.png" alt="Logo" style=" max-height: 100px;">
                                 </div>
                             </div>
                             <hr>
