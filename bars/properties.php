@@ -1,13 +1,6 @@
 <?php
-$cards = "bg-primary text-white text-lg";
-$systemname = "KBF Dental Care";
-$sidebarColor = "bg-gradient-primary";
-$superuser = "admins";
-$dentist = [
-    "Dr. Kathleen B. Factoriza",
-    "Dr. Kwin Elizabeth R. Factoriza",
-    "Dr. Marites San Jose"
-
-];
-
+$cards = "bg-success text-white text-lg";
+$systemname = "Smile Save Dental Care";
+$sidebarColor = "bg-gradient-success";
+$superuser = "sysadmin";
 ?>

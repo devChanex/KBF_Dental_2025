@@ -37,13 +37,13 @@ class ServiceClass
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     echo '
                 <div class="row">
-                <div class="col-lg-6"><strong>KBF Dental Care</strong></div>
+                <div class="col-lg-6"><strong>Smile Save Dental Care</strong></div>
                 <div class="col-lg-6" style="text-align:right;">Bringing you, your best smile!</div>
             </div>
             <div class="row">
-                <div class="col-lg-12">0927 B.F Gomez St. Purok 3 I Ibaba Sta.Rosa Laguna</div>
-                
-                <div class="col-lg-12">Contact us: 09056325517 || 09471027111</div>
+                <div class="col-lg-12">2/F Mondo Bambini Commercial Strip Bldg.,
+                                    Brgy. Zapote, Binan City, Laguna</div>
+                <div class="col-lg-12">Contact us: 0919-009-3099</div>
                 <hr>
                 <div class="col-lg-12" style="text-align:center;"><strong>Electronic Statement of Account - ESOA</strong></div>
             </div>
@@ -55,7 +55,7 @@ class ServiceClass
                            
                     </div>
                     <div class="col-md-6">
-                            Date :<strong>' . date("m/d/Y", strtotime($row["date"])) . '</strong>
+                            Date :<strong>' . $row["date"] . '</strong>
                            
                            
                     </div>
@@ -97,7 +97,8 @@ class ServiceClass
                 <table class="table" width="100%" cellspacing="0" style="font-size:12px;">
 <thead>
 <tr>
-<th width="50%">Treatment</th>
+<th>Treatment</th>
+<th>Remarks</th>
 <th>Price</th>
 
 </tr>
@@ -116,9 +117,9 @@ class ServiceClass
                             $total += $row2["price"];
                             echo '
                             <tr>
-                            <td width="50%" onclick="createTicket(\'' . $row2["tsubid"] . '\',\'' . $row2["treatment"] . '\',\'treatment\',\'treatmentsub\',\'tsubid\');" style="white-space: nowrap; width: 1%;">' . $row2["treatment"] . '</td>
+                            <td onclick="createTicket(\'' . $row2["tsubid"] . '\',\'' . $row2["treatment"] . '\',\'treatment\',\'treatmentsub\',\'tsubid\');" style="white-space: nowrap; width: 1%;">' . $row2["treatment"] . '</td>
                            
-                           
+                            <td onclick="createTicket(\'' . $row2["tsubid"] . '\',\'' . $row2["remarks"] . '\',\'remarks\',\'treatmentsub\',\'tsubid\');">' . $row2["remarks"] . '</td>
                             <td onclick="createTicket(\'' . $row2["tsubid"] . '\',\'' . $row2["price"] . '\',\'price\',\'treatmentsub\',\'tsubid\');">' . $row2["price"] . '</td>
                             </tr>
                             
@@ -127,7 +128,7 @@ class ServiceClass
                         echo '
                                             <strong>
                                             <tr>
-                                            <td colspan="1">Total</td>
+                                            <td colspan="2">Total</td>
                                             <td onclick="createTicket(\'' . $soaid . '\',\'' . $row["total"] . '\',\'total\',\'treatmentsoa\',\'soaid\');">' . $row["total"] . '</td>
                                             
                                             </tr>
@@ -161,7 +162,7 @@ By signing below, I voluntarily consent to the proposed treatment and authorize 
                         echo '
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <label>Patient’s/Guardian’s Signature</label>
+                                    <label>Patient Signature</label>
                                     <div class="border rounded p-3 signature-box"
                                         style="height: 80px; cursor: pointer;" 
                                         id="patient-signature-box">
@@ -184,7 +185,7 @@ By signing below, I voluntarily consent to the proposed treatment and authorize 
                         echo '
                          <div class="row">
                                 <div class="col-sm-6">
-                                    <label>Patient’s/Guardian’s Signature</label>
+                                    <label>Patient Signature</label>
                                     <div class="border rounded p-3 signature-box"
                                         style="height: 80px; cursor: pointer;" 
                                         id="patient-signature-box">

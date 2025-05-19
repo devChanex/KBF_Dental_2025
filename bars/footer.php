@@ -4,8 +4,8 @@ echo '
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-        KBF Dental Care &copy; 2025 
-       
+             
+        <img src="img/logoRevised.png" class="img-fluid" style="max-height: 30px;">
    
         </div>
     </div>
@@ -49,16 +49,14 @@ echo '
         <video id="video" autoplay playsinline></video>
         <div>
             <button onclick="capturePhoto()">Capture</button>
-            
             <button onclick="switchCamera()">Switch Camera</button>
-             <button onclick="mirror()">Mirror</button>
+            <button onclick="mirror()">Mirror</button>
             <button onclick="closeCameraModal()">Cancel</button>
         </div>
     </div>
 </div>
 
-           
-  <script src="controllers/backupController.js"></script>
+
 ';
 
 ?>

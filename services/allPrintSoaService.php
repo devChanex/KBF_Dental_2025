@@ -54,7 +54,7 @@ class ServiceClass
                            
                     </div>
                     <div class="col-md-6">
-                            Date :<strong>' . date("m/d/Y", strtotime($row["date"])) . '</strong>
+                            Date :<strong>' . $row["date"] . '</strong>
                            
                            
                     </div>
@@ -77,7 +77,7 @@ class ServiceClass
                 
 
                 <div class="col-lg-12">
-                <table class="table text-dark" width="100%" cellspacing="0" style="font-size:12px;">
+                <table class="table" width="100%" cellspacing="0" style="font-size:12px;">
 <thead>
 <tr>
 <th>Treatment</th>

@@ -1,6 +1,5 @@
 <?php
 require_once('databaseService.php');
-session_start();
 $service = new ServiceClass();
 
 $clientid = urldecode($_POST['id']);
@@ -25,10 +24,10 @@ class ServiceClass
     //DO NOT INCLUDE THIS CODE
     public function process($clientid)
     {
-        $superuser = "admins";
 
 
-        $query = "select a.soaid,tsubid,hmoaccredited,price,date,dentist,treatment,remarks,details,diagnosis from treatmentsoa a inner join treatmentsub b on a.soaid=b.soaid where a.clientid=:a order by Date";
+
+        $query = "select date,dentist,treatment,remarks,details from treatmentsoa a inner join treatmentsub b on a.soaid=b.soaid where a.clientid=:a order by Date";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':a', $clientid);
         $stmt->execute();
@@ -37,48 +36,12 @@ class ServiceClass
 
                 echo '
                 <tr>
-                <td>' . date("Y/m/d", strtotime($row["date"])) . '</td>
+                <td>' . $row["date"] . '</td>
                 <td>' . $row["dentist"] . '</td>
                 <td>' . $row["treatment"] . '</td>
-                 <td>' . $row["diagnosis"] . '</td>
                 <td>' . $row["remarks"] . '</td>
-                <td>' . $row["details"] . '</td>';
-                $hmo = $row["hmoaccredited"];
-                $hmoDisplay = '';
-
-                if (!empty($hmo)) {
-                    $parts = explode('|', $hmo);
-                    $hmoDisplay = trim($parts[0]);
-                }
-
-                echo '  <td>' . $hmoDisplay . '</td>';
-
-
-                echo '
-          <td>' . number_format($row["price"], 2) . '</td>
+                <td>' . $row["details"] . '</td>
           
-          <td align="center">
-  <button class="btn btn-success edit-btn"
-    data-soaid="' . $row["soaid"] . '"
-     data-tsubid="' . $row["tsubid"] . '"
-    data-treatment="' . htmlspecialchars($row["treatment"], ENT_QUOTES) . '"
-    data-diagnosis="' . htmlspecialchars($row["diagnosis"], ENT_QUOTES) . '"
-    data-remarks="' . htmlspecialchars($row["remarks"], ENT_QUOTES) . '"
-    data-details="' . htmlspecialchars($row["details"], ENT_QUOTES) . '"
-    data-price="' . $row["price"] . '"
-    data-toggle="modal" data-target="#editModal">
-    <i class="fas fa-edit"></i>
-  </button>
-';
-
-                if ($_SESSION["username"] == $superuser) {
-                    echo '<button class="btn btn-danger" onclick="deleteTreatment(' . $row["soaid"] . ',' . $row["tsubid"] . ')">
-    <i class="fas fa-trash"></i>
-  </button>';
-                }
-                echo '
-</td>
-
                 
             </tr>';
             }

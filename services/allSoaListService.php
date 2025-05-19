@@ -42,7 +42,7 @@ class ServiceClass
                 <td>' . $row["dentist"] . '</td>
                 <td>' . $row["treatment"] . '</td>
                 <td>' . $row["price"] . '</td>
-                <td>' . date("Y/m/d", strtotime($row["date"])) . '</td>
+                <td>' . $row["date"] . '</td>
                 <td align="center">';
 
 
