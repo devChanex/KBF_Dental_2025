@@ -187,14 +187,8 @@
                                                 <select id="hmo" name="hmo" class="form-control mb-2">
                                                     <option value="">-- Select HMO --</option>
                                                     <option value="Flexicare">Flexicare</option>
-                                                    <option value="Intellicare">Intellicare</option>
-                                                    <option value="Avega">Avega</option>
                                                     <option value="Medicard">Medicard</option>
-                                                    <option value="Health Partners Dental Access, Inc.">Health Partners
-                                                        Dental
-                                                        Access, Inc.</option>
-                                                    <option value="Dental Network Company">Dental Network Company
-                                                    </option>
+                                                    <option value="Eastwest">Eastwest</option>
                                                     <option value="Cocolife">Cocolife</option>
                                                 </select>
 
