@@ -166,7 +166,7 @@
                                     <select id="hmo" name="hmo" class="form-control mb-2">
                                         <option value="">-- Select HMO --</option>
                                         <?php
-                                        $hmos = ['Flexicare', 'Intellicare', 'Avega', 'Medicard', 'Health Partners Dental Access, Inc.', 'Dental Network Company', 'Cocolife'];
+                                        $hmos = ['Flexicare', 'Medicard', 'Eastwest', 'Cocolife'];
                                         foreach ($hmos as $hmo) {
                                             $selected = ($_GET['hmo'] ?? '') == $hmo ? 'selected' : '';
                                             echo "<option value=\"$hmo\" $selected>$hmo</option>";
