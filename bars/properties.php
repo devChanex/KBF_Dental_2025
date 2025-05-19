@@ -1,7 +1,7 @@
 <?php
-$cards = "bg-success text-white text-lg";
+$cards = "bg-primary text-white text-lg";
 $systemname = "KBF Dental Care";
-$sidebarColor = "bg-gradient-success";
+$sidebarColor = "bg-gradient-primary";
 $superuser = "admins";
 $dentist = [
     "Dr. Kathleen B. Factoriza",
