@@ -1,4 +1,5 @@
 loadTreatment();
+computeAge();
 function loadTreatment() {
     var fd = new FormData();
     $.ajax({
@@ -61,7 +62,17 @@ function add() {
     document.getElementById("price").value = 0;
 }
 
-
+function computeAge() {
+    var dob = document.getElementById("birthDate").value;
+    var dobDate = new Date(dob);
+    var today = new Date();
+    var age = today.getFullYear() - dobDate.getFullYear();
+    var monthDiff = today.getMonth() - dobDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dobDate.getDate())) {
+        age--;
+    }
+    document.getElementById("age").value = age;
+}
 function editTreatment(button) {
     var treatment = decodeURIComponent(button.getAttribute("data-treatment"));
     var diagnosis = decodeURIComponent(button.getAttribute("data-diagnosis"));
