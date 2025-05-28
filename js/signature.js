@@ -1,7 +1,8 @@
 const modalSignature = document.getElementById('signature-modal');
 const canvasSignature = document.getElementById('signature-pad');
 const ctx = canvasSignature.getContext('2d');
-
+ctx.strokeStyle = "#222"; // Set stroke color (black-ish)
+ctx.lineWidth = 3;
 let signatureCallback = null;
 let drawing = false;
 
@@ -16,19 +17,35 @@ canvasSignature.addEventListener('touchstart', startPosition, { passive: false }
 canvasSignature.addEventListener('touchmove', draw, { passive: false });
 canvasSignature.addEventListener('touchend', endPosition);
 
+
+
+function resizeCanvas() {
+    const rect = canvasSignature.getBoundingClientRect();
+    canvasSignature.width = rect.width;
+    canvasSignature.height = rect.height;
+    ctx.strokeStyle = "#222";
+    ctx.lineWidth = 5;
+
+}
 function getXY(e) {
+    const rect = canvasSignature.getBoundingClientRect();
+    let clientX, clientY;
+
     if (e.touches && e.touches.length > 0) {
-        const rect = canvasSignature.getBoundingClientRect();
-        return {
-            x: e.touches[0].clientX - rect.left,
-            y: e.touches[0].clientY - rect.top
-        };
+        clientX = e.touches[0].clientX;
+        clientY = e.touches[0].clientY;
+    } else if (e.changedTouches && e.changedTouches.length > 0) {
+        clientX = e.changedTouches[0].clientX;
+        clientY = e.changedTouches[0].clientY;
     } else {
-        return {
-            x: e.offsetX,
-            y: e.offsetY
-        };
+        clientX = e.clientX;
+        clientY = e.clientY;
     }
+
+    return {
+        x: clientX - rect.left,
+        y: clientY - rect.top
+    };
 }
 
 function startPosition(e) {
@@ -45,9 +62,14 @@ function draw(e) {
     const pos = getXY(e);
     ctx.lineTo(pos.x, pos.y);
     ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(pos.x, pos.y);
 }
 
 function endPosition(e) {
+    if (drawing) {
+        ctx.closePath();
+    }
     drawing = false;
 }
 
@@ -60,6 +82,10 @@ function openSignatureModal(callback) {
     signatureCallback = callback;
     clearPad();
     modalSignature.style.display = "flex";
+    setTimeout(() => {
+        resizeCanvas();
+
+    }, 10);
 }
 
 function closeSignatureModal() {
