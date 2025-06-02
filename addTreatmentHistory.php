@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KBF Dental Care</title>
+    <title> KBF Dental Care </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -55,12 +55,12 @@
                         <div class="card-body" id="bodyResult">
 
                             <div class="row">
-                                <div class="col-lg-6"><strong>KBF Dental Care</strong></div>
-                                <div class="col-lg-6" style="text-align:right;">Bringing you, your best smile!</div>
+                                <div class="col-lg-6"><strong><?php echo $systemname; ?></strong></div>
+                                <div class="col-lg-6" style="text-align:right;"><?php echo $tagline; ?></div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-12">0927 B.F Gomez St. Purok 3 I Ibaba Sta.Rosa Laguna</div>
-                                <div class="col-lg-12">Contact us: 09471027111</div>
+                                <div class="col-lg-12"><?php echo $address; ?></div>
+                                <div class="col-lg-12"><?php echo $contact; ?></div>
                                 <hr>
                                 <div class="col-lg-12" style="text-align:center;"><strong>Electronic Statement of
                                         Account - ESOA</strong></div>
@@ -110,15 +110,18 @@
                                     <input type="Text" name="address" id="address" placeholder="Address"
                                         class="form-control" value="<?php echo $_GET['address']; ?>" readonly>
                                     <label for="Address">HMO Accredited:</label>
-                                    <input type="Text" name="address" id="hmo" placeholder="" class="form-control"
-                                        value="<?php
 
-                                        if ($_GET['hmo'] != "") {
-                                            echo $_GET['hmo'] . ' | ' . $_GET["cardnumber"] . ' | ' . $_GET["company"];
-
+                                    <select id="hmo" name="hmo" class="form-control mb-2">
+                                        <option value="">-- Select HMO --</option>
+                                        <?php
+                                        // $hmos = ['Flexicare', 'Intellicare', 'Avega', 'Medicard', 'Health Partners Dental Access, Inc.', 'Dental Network Company', 'Cocolife'];
+                                        foreach ($hmos as $hmo) {
+                                            $selected = ($_GET['hmo'] ?? '') == $hmo ? 'selected' : '';
+                                            echo "<option value=\"$hmo\" $selected>$hmo</option>";
                                         }
+                                        ?>
+                                    </select>
 
-                                        ?>" readonly>
 
                                 </div>
 
@@ -143,6 +146,13 @@
                                     <label for="lastName">Treatment Fee</label>
                                     <input type="number" name="price" id="price" placeholder="Input fee"
                                         class="form-control" value="">
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="1" id="hmoCovered"
+                                            name="hmoCovered">
+                                        <label class="form-check-label" for="hmoCovered">
+                                            Covered by HMO
+                                        </label>
+                                    </div>
                                     <br>
                                     <button class="btn btn-primary form-control" onclick="add()">Add</button>
                                 </div>
@@ -156,19 +166,11 @@
                                                 <th>Details</th>
                                                 <th>Remarks</th>
                                                 <th>Price</th>
+                                                <th>HMO</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Treatment</th>
-                                                <th>Diagnosis</th>
-                                                <th>Details</th>
-                                                <th>Remarks</th>
-                                                <th>Price</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </tfoot>
+
                                         <tbody id="treatmentList">
                                             <!-- <tr>
                -->
@@ -226,7 +228,7 @@
             <script src="controllers/logOutConroller.js"></script>
             <script src="controllers/sessionController.js"></script>
             <script src="controllers/eSoaController.js"></script>
-            <script src="controllers/divPrinterController.js"></script>
+            <script src="controllers/divPrinterController-v1.js"></script>
             <script src="js/custom.js"></script>
 </body>
 

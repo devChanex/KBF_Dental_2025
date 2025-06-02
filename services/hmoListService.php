@@ -39,7 +39,7 @@ class ServiceClass
             }
             $dynamics = 'AND (' . implode(' OR ', $orConditions) . ')';
         }
-        $dynamics .= '  LIMIT :limit OFFSET :offset';
+        $dynamics .= 'ORDER BY name ASC  LIMIT :limit OFFSET :offset';
 
         $query = "select * from hmo where status='Active' $dynamics";
         $stmt = $this->conn->prepare($query);
@@ -53,7 +53,7 @@ class ServiceClass
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
                 echo '
-                <tr>
+                <tr style="color: black;">
               
                 <td>' . ucwords(strtolower($row["name"])) . '</td>
                 <td>' . $row["hmo"] . '</td>

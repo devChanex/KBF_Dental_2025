@@ -28,7 +28,7 @@ class ServiceClass
     //DO NOT INCLUDE THIS CODE
     public function process($search, $page, $itemPerPage)
     {
-        $superuser = "admins";
+        $superuser = "ssdc_admin2020";
 
         $offset = ($page - 1) * $itemPerPage;  // Calculate the offset for pagination
 
@@ -43,9 +43,9 @@ class ServiceClass
             $dynamics = 'AND (' . implode(' OR ', $orConditions) . ')';
         }
 
-        $dynamics .= 'ORDER BY CONCAT(lname, \', \', fname, \' \', mdname) ASC  LIMIT :limit OFFSET :offset';
+        $dynamics .= 'ORDER BY CONCAT(lname, \', \', fname, \' \', mdname) ASC LIMIT :limit OFFSET :offset';
         // Using prepared statements for query to avoid SQL injection
-        $query = "SELECT * FROM clientprofile a WHERE (status != 'Deleted' OR status IS NULL) $dynamics";
+        $query = "SELECT * FROM clientprofile a WHERE (status != 'Deleted' OR status IS NULL) $dynamics ";
 
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':search', $search, PDO::PARAM_STR);
@@ -60,7 +60,7 @@ class ServiceClass
                 $age = $today->diff($dob)->y;
                 $fullname = $row["lname"] . ', ' . $row["fname"] . ' ' . $row["mdname"];
                 echo '
-                <tr>
+                <tr style="color: black;">
                 <td>' . ucwords(strtolower($fullname)) . '</td>
                 <td>' . ucwords(strtolower($row["nickname"])) . '</td>
                 <td>' . $age . '</td>
@@ -97,7 +97,7 @@ class ServiceClass
                 if ($stmt2->rowCount() > 0) {
 
                     while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
-                        echo '<a href="viewConsent.php?dentist=' . $row2["dentist"] . '&date=' . $row2["date"] . '&consentid=' . $row2["id"] . '&civilStatus=' . $row2["civilstatus"] . '&company=' . $row2["company"] . '&cardNumber=' . $row2["cardnumber"] . '&hmo=' . $row2["hmo"] . '&religion=' . $row2["religion"] . '&clientid=' . $row["clientid"] . '&lname=' . $row["lname"] . '&fname=' . $row2["fname"] . '&mname=' . $row2["mdname"] . '&nick=' . $row2["nickname"] . '&age=' . $age . '&sex=' . $row["sex"] . '&occupation=' . $row["occupation"] . '
+                        echo '<a href="viewConsent.php?dentist=' . $row2["dentist"] . '&date=' . $row2["date"] . '&consentid=' . $row2["id"] . '&civilStatus=' . $row2["civilstatus"] . '&company=' . $row2["company"] . '&cardNumber=' . $row2["cardnumber"] . '&hmo=' . $row2["hmo"] . '&religion=' . $row2["religion"] . '&clientid=' . $row["clientid"] . '&lname=' . $row["lname"] . '&fname=' . $row2["fname"] . '&mname=' . $row2["mdname"] . '&nick=' . $row2["nickname"] . '&age=' . $row2["age"] . '&sex=' . $row["sex"] . '&occupation=' . $row["occupation"] . '
                         &birthDate=' . $row2["birthDate"] . '&mobileNumber=' . $row2["mobileNumber"] . '&homeAddress=' . $row2["homeAddress"] . '
                         &guardianName=' . $row2["guardianName"] . '&gOccupation=' . $row2["gOccupation"] . '&refferedBy=' . $row2["refferedBy"] . '
                         " class="btn btn-primary btn-circle" title="View Client Consent"><i class="fas fa-file"></i></a>

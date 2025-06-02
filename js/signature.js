@@ -24,7 +24,7 @@ function resizeCanvas() {
     canvasSignature.width = rect.width;
     canvasSignature.height = rect.height;
     ctx.strokeStyle = "#222";
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 3;
 
 }
 function getXY(e) {

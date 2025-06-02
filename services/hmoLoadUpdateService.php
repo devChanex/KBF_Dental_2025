@@ -39,8 +39,7 @@ class ServiceClass
                                 value="' . $row["name"] . '">
                             <label for="HMO">HMO</label>
                             <select id="hmo" name="hmo" class="form-control mb-2">';
-                $hmos = ['Flexicare', 'Medicard', 'Eastwest', 'Cocolife'];
-
+                $hmos = ['Flexicare', 'Intellicare', 'Avega', 'Medicard', 'Health Partners Dental Access, Inc.', 'Dental Network Company', 'Cocolife'];
                 foreach ($hmos as $hmo) {
                     $selected = ($row["hmo"] ?? '') == $hmo ? 'selected' : '';
                     echo "<option value=\"$hmo\" $selected>$hmo</option>";

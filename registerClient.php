@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KBF Dental Care</title>
+    <title> KBF Dental Care </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -161,8 +161,12 @@
                                         <select id="hmo" name="hmo" class="form-control mb-2">
                                             <option value="">-- Select HMO --</option>
                                             <option value="Flexicare">Flexicare</option>
+                                            <option value="Intellicare">Intellicare</option>
+                                            <option value="Avega">Avega</option>
                                             <option value="Medicard">Medicard</option>
-                                            <option value="Eastwest">Eastwest</option>
+                                            <option value="Health Partners Dental Access, Inc.">Health Partners Dental
+                                                Access, Inc.</option>
+                                            <option value="Dental Network Company">Dental Network Company</option>
                                             <option value="Cocolife">Cocolife</option>
                                         </select>
 

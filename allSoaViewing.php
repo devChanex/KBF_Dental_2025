@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KBF Dental Care</title>
+    <title> KBF Dental Care </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -84,8 +84,8 @@
             <script src="js/sb-admin-2.min.js"></script>
             <script src="controllers/logOutConroller.js"></script>
             <script src="controllers/sessionController.js"></script>
-            <script src="controllers/soaViewingController.js"></script>
-            <script src="controllers/divPrinterController.js"></script>
+            <script src="controllers/soaViewingController-v6.js"></script>
+            <script src="controllers/divPrinterController-v1.js"></script>
 
 
 

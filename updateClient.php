@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KBF Dental Care</title>
+    <title> KBF Dental Care </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -166,7 +166,7 @@
                                     <select id="hmo" name="hmo" class="form-control mb-2">
                                         <option value="">-- Select HMO --</option>
                                         <?php
-                                        $hmos = ['Flexicare', 'Medicard', 'Eastwest', 'Cocolife'];
+                                        $hmos = ['Flexicare', 'Intellicare', 'Avega', 'Medicard', 'Health Partners Dental Access, Inc.', 'Dental Network Company', 'Cocolife'];
                                         foreach ($hmos as $hmo) {
                                             $selected = ($_GET['hmo'] ?? '') == $hmo ? 'selected' : '';
                                             echo "<option value=\"$hmo\" $selected>$hmo</option>";

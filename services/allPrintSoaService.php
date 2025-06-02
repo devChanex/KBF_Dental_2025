@@ -42,7 +42,7 @@ class ServiceClass
             </div>
             <div class="row">
                 <div class="col-lg-12">0927 B.F Gomez St. Purok 3 I Ibaba Sta.Rosa Laguna</div>
-                <div class="col-lg-12">Contact us: 09471027111</div>
+                <div class="col-lg-12">Contact us: 09056325517 || 09471027111</div>
                 <hr>
                 <div class="col-lg-12" style="text-align:center;"><strong>Electronic Statement of Account - ESOA</strong></div>
             </div>
@@ -79,7 +79,7 @@ class ServiceClass
                 <div class="col-lg-12">
                 <table class="table text-dark" width="100%" cellspacing="0" style="font-size:12px;">
 <thead>
-<tr>
+<tr style="color: black;">
 <th>Treatment</th>
 <th>Details</th>
 <th>Remarks</th>
@@ -100,7 +100,7 @@ class ServiceClass
                         while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
                             $total += $row2["price"];
                             echo '
-        <tr>
+        <tr style="color: black;">
         <td>' . $row2["treatment"] . '</td>
         <td>' . $row2["details"] . '</td>
         <td>' . $row2["remarks"] . '</td>
@@ -111,7 +111,7 @@ class ServiceClass
                         }
                         echo '
                         <strong>
-                        <tr>
+                        <tr style="color: black;">
                         <td colspan="3">Total</td>
                         <td>' . $total . '</td>
                         
