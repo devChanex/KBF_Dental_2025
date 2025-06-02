@@ -87,6 +87,13 @@ echo '
                     </div>
                 </div>
             </li>
+
+             <li class="nav-item">
+                <a class="nav-link" href="calendar.php" >
+                    <i class="fas fa-calendar"></i>
+                    <span>Client Calendar</span>
+                </a>
+        </li>
             ';
 
 // if ($_SESSION["username"] == $superuser) {
