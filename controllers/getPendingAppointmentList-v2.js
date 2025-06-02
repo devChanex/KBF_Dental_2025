@@ -41,22 +41,22 @@ function approve(clientid, email, fname) {
                 const subject = "Appointment Status - Approved";
                 const greetings = "Dear " + fname;
                 const msg = `
-Hello! This email confirms your upcoming appointment with KBF Dental Care on <strong>${approveDate}</strong> has been <strong>approved</strong>.
+<p style="margin: 0 0 8px 0;">Hello! This email confirms your upcoming appointment with <strong>KBF Dental Care</strong> on <strong>${approveDate}</strong> has been <strong>approved</strong>.</p>
 
-<h4 style="margin-top:1em;">📍 How to get here:</h4>
-<p>KBF Bldg, Brgy. Ibaba, Sta. Rosa, Laguna<br>
+<h4 style="margin: 16px 0 4px 0;">📍 How to get here:</h4>
+<p style="margin: 0 0 8px 0;">KBF Bldg, Brgy. Ibaba, Sta. Rosa, Laguna<br>
 (In front of De Lima Subd.)</p>
 
-<h4>⏰ When to arrive:</h4>
-<p><strong>15 minutes before your appointment time</strong></p>
+<h4 style="margin: 16px 0 4px 0;">⏰ When to arrive:</h4>
+<p style="margin: 0 0 8px 0;"><strong>15 minutes before your appointment time</strong></p>
 
-<h4>📌 Cancellation Policy (for patients with reservation):</h4>
-<p>Life happens, we get it! If you need to cancel, just let us know <strong>at least 3 days before</strong> your appointment date and your reservation fee won’t be forfeited.</p>
-<p>If you cancel <strong>less than 3 days</strong> before your appointment, your reservation fee will be <strong>automatically forfeited</strong>.</p>
+<h4 style="margin: 16px 0 4px 0;">📌 Cancellation Policy (for patients with reservation):</h4>
+<p style="margin: 0 0 8px 0;">Life happens, we get it! If you need to cancel, just let us know <strong>at least 3 days before</strong> your appointment date and your reservation fee won’t be forfeited.</p>
+<p style="margin: 0 0 8px 0;">If you cancel <strong>less than 3 days</strong> before your appointment, your reservation fee will be <strong>automatically forfeited</strong>.</p>
 
-<h4>📲 Contact us:</h4>
-<p>0947 102 7111</p>
-                `.trim();
+<h4 style="margin: 16px 0 4px 0;">📲 Contact us:</h4>
+<p style="margin: 0;">0947 102 7122</p>
+`;
 
                 sendMail(email, subject, greetings, msg);
                 toastReload("successToast", "Appointment Approved Successfully");
