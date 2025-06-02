@@ -38,7 +38,27 @@ function approve(clientid, email, fname) {
             contentType: false,
             type: 'POST',
             success: function (result) {
-                sendMail(email, "Appointment Status - Approved", "Dear " + fname, "Hello! This email confirms your upcoming appointment with KBF Dental Care on " + approveDate + " has been approved. If you need to reschedule, please call us at least 48 hours before the appointment.");
+                const subject = "Appointment Status - Approved";
+                const greetings = "Dear " + fname;
+                const msg = `
+Hello! This email confirms your upcoming appointment with KBF Dental Care on <strong>${approveDate}</strong> has been <strong>approved</strong>.
+
+<h4 style="margin-top:1em;">📍 How to get here:</h4>
+<p>KBF Bldg, Brgy. Ibaba, Sta. Rosa, Laguna<br>
+(In front of De Lima Subd.)</p>
+
+<h4>⏰ When to arrive:</h4>
+<p><strong>15 minutes before your appointment time</strong></p>
+
+<h4>📌 Cancellation Policy (for patients with reservation):</h4>
+<p>Life happens, we get it! If you need to cancel, just let us know <strong>at least 3 days before</strong> your appointment date and your reservation fee won’t be forfeited.</p>
+<p>If you cancel <strong>less than 3 days</strong> before your appointment, your reservation fee will be <strong>automatically forfeited</strong>.</p>
+
+<h4>📲 Contact us:</h4>
+<p>0947 102 7122</p>
+                `.trim();
+
+                sendMail(email, subject, greetings, msg);
                 toastReload("successToast", "Appointment Approved Successfully");
                 // location.reload();
 
