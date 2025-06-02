@@ -54,7 +54,7 @@ $message = "
     </div>
     <div class='email-body'>
       <p><strong>$greetings,</strong></p>
-      <p>$msg</p>
+      $msg
     </div>
     <div class='email-footer'>
       <p>This is an automated message. Please do not reply.</p>

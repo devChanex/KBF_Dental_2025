@@ -55,7 +55,7 @@ Hello! This email confirms your upcoming appointment with KBF Dental Care on <st
 <p>If you cancel <strong>less than 3 days</strong> before your appointment, your reservation fee will be <strong>automatically forfeited</strong>.</p>
 
 <h4>📲 Contact us:</h4>
-<p>0947 102 7122</p>
+<p>0947 102 7111</p>
                 `.trim();
 
                 sendMail(email, subject, greetings, msg);
