@@ -28,7 +28,7 @@ class ServiceClass
     //DO NOT INCLUDE THIS CODE
     public function process($search, $page, $itemPerPage)
     {
-        $superuser = "ssdc_admin2020";
+        $superuser = "admins";
 
         $offset = ($page - 1) * $itemPerPage;  // Calculate the offset for pagination
 
