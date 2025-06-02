@@ -68,6 +68,12 @@ echo '
                 </a>
         </li>
         <li class="nav-item">
+                <a class="nav-link" href="pendingAppointmentList.php" >
+                    <i class="fas fa-credit-card"></i>
+                    <span>Client Appointment</span>
+                </a>
+        </li>
+        <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#config" aria-expanded="false"
                     aria-controls="config">
                     <i class="fas fa-cog"></i>
