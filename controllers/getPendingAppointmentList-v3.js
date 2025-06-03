@@ -90,8 +90,8 @@ function decline(clientid, email, fname) {
             type: 'POST',
             success: function (result) {
                 sendMail(email, "Appointment Status - Declined", "Dear " + fname, "Sorry, this email confirms that your upcoming appointment with KBF Dental Care has been declined. If you need to reschedule an appointment, please call us.");
+                toastReload("successToast", "Appointment declined Successfully");
 
-                location.reload();
 
             }
 
