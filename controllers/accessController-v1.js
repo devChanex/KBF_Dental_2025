@@ -34,7 +34,7 @@ function validateLogin(username, password) {
             try {
                 var data = typeof result === "string" ? JSON.parse(result) : result;
                 if (data.result === "success") {
-                    alert("Support Email: " + data.email); // Alert the supportemail
+
 
                     const now = new Date();
                     const formatted = now.toLocaleString('en-US', {
