@@ -50,7 +50,7 @@ error_reporting(0);
 
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid" id="content-table">
+                <div class="container-fluid" style="max-width:900px;">
 
                     <!-- Page Heading -->
                     <div class="card shadow">
@@ -147,7 +147,7 @@ error_reporting(0);
             <script src="js/sb-admin-2.min.js"></script>
             <script src="controllers/logOutConroller.js"></script>
             <script src="controllers/sessionController.js"></script>
-            <script src="controllers/calendarController.js"></script>
+            <script src="controllers/calendarController-v1.js"></script>
 
 
 

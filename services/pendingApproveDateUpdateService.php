@@ -34,11 +34,31 @@ class ServiceClass
 		try {
 
 			$query = "update bookappointmentinfo set dateassigned=:a, status='Booked' where clientid=:b";
-			//$query = "Insert intoclientprofile(lname,fname,mdname,nickname,age,sex,occupation,mobileNumber,homeAddress,guardianName,gOccupation,refferedBy) values (:a,:b,:c,:d,:e,:f,:g,:i,:j,:k,:l,:m)";
+
 			$stmt = $this->conn->prepare($query);
 			$stmt->bindParam(':a', $approveDate);
-
 			$stmt->bindParam(':b', $clientid);
+
+			$stmt->execute();
+
+
+			$query = "select * from bookappointmentinfo where clientid=:b";
+			$stmt = $this->conn->prepare($query);
+			$stmt->bindParam(':b', $clientid);
+			$stmt->execute();
+			$eventname = '';
+			if ($stmt->rowCount() > 0) {
+				while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+					$eventname = $row["lName"] . ', ' . $row["fName"];
+				}
+			}
+
+
+			$query = "insert into calendar_event_master (event_name,event_start_date,event_end_date) values (:a,:b,:c)";
+			$stmt = $this->conn->prepare($query);
+			$stmt->bindParam(':a', $eventname);
+			$stmt->bindParam(':b', $approveDate);
+			$stmt->bindParam(':c', $approveDate);
 
 			$stmt->execute();
 			return "success";
