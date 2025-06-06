@@ -85,6 +85,54 @@
 
 
 
+                            <div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog modal-xl " role="document">
+                                    <div class="modal-content ">
+                                        <form id="editForm">
+                                            <div class="modal-header <?php echo $cards; ?>">
+                                                <h5 class="modal-title" id="editModalLabel">Approve Appointment</h5>
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span>&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="hidden" name="clientid" id="book-clientid" readonly>
+
+                                                <div class="form-group">
+                                                    <label>Full Name</label>
+                                                    <input type="text" class="form-control" name="name"
+                                                        id="book-fullname" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="text" class="form-control" name="email" id="book-email"
+                                                        readonly>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Date</label>
+                                                    <input type="date" class="form-control" name="date" id="book-date">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Time</label>
+                                                    <input type="time" class="form-control" name="time" id="book-time">
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary"
+                                                    onclick="approve()">Approve</button>
+
+                                                <button type="button" class="btn btn-danger"
+                                                    data-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
@@ -119,7 +167,7 @@
             <script src="js/custom.js"></script>
             <script src="controllers/logOutConroller.js"></script>
             <script src="controllers/sessionController.js"></script>
-            <script src="controllers/getPendingAppointmentList-v3.js"></script>
+            <script src="controllers/getPendingAppointmentList-v4.js"></script>
             <script src="controllers/mailerController.js"></script>
 
 

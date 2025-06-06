@@ -44,11 +44,20 @@ class ServiceClass
                 <td>';
 				if ($row["Status"] == "Pending") {
 					echo '
+				<button class="btn btn-success book-btn"
+    data-clientid="' . $row["clientid"] . '"
+     data-fullname="' . $fullname . '"
+	 data-email="' . $row["Email"] . '"
+  
+    data-toggle="modal" data-target="#appointmentModal">
+    Approve
+  </button>
 				
-					<a href="#" onclick="approve(\'' . $row["clientid"] . '\',\'' . $row["Email"] . '\',\'' . $row["fName"] . '\');"   class="btn btn-primary ">Approve</a>
 				<a href="#" onclick="decline(\'' . $row["clientid"] . '\',\'' . $row["Email"] . '\',\'' . $row["fName"] . '\');"   class="btn btn-danger ">Decline</a>
 
 				';
+
+					// <a href="#" onclick="approve(\'' . $row["clientid"] . '\',\'' . $row["Email"] . '\',\'' . $row["fName"] . '\');"   class="btn btn-primary ">Approve</a>
 				} else {
 					echo 'Processed';
 				}
