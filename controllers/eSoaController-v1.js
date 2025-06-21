@@ -35,7 +35,7 @@ function add() {
     document.getElementById("treatmentList").innerHTML += `
         <tr>
             <td>${treatment}</td>
-            <td>${diagnosisForDisplay}</td>
+            <td style="display:none;">${diagnosisForDisplay}</td>
             <td>${detailsForDisplay}</td>
             <td>${remarksForDisplay}</td>
             <td>${price}</td>
@@ -133,7 +133,7 @@ function computeTotal() {
 
         }
     }
-    document.getElementById("treatmentList").innerHTML += "<td colspan=\"4\">Total</td><td>" + total + "</td><td></td></tr>";
+    document.getElementById("treatmentList").innerHTML += "<td colspan=\"3\">Total</td><td>" + total + "</td><td></td></tr>";
 
 
 }

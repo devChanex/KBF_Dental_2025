@@ -134,9 +134,9 @@
                                     <select id="treatment" name="treatment" class="form-control">
 
                                     </select>
-                                    <label for="diagnosis">Diagnosis</label>
+                                    <label for="diagnosis" style="display:none;">Diagnosis</label>
                                     <textarea id="diagnosis" class="form-control" name="diagnosis"
-                                        placeholder="Diagnosis"></textarea>
+                                        placeholder="Diagnosis" style="display:none;"></textarea>
                                     <label for="treatment">Details</label>
                                     <textarea id="details" class="form-control" name="details"
                                         placeholder="Details"></textarea>
@@ -162,7 +162,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Treatment</th>
-                                                <th>Diagnosis</th>
+                                                <th style="display:none;">Diagnosis</th>
                                                 <th>Details</th>
                                                 <th>Remarks</th>
                                                 <th>Price</th>
@@ -227,7 +227,7 @@
             <script src="js/sb-admin-2.min.js"></script>
             <script src="controllers/logOutConroller.js"></script>
             <script src="controllers/sessionController.js"></script>
-            <script src="controllers/eSoaController.js"></script>
+            <script src="controllers/eSoaController-v1.js"></script>
             <script src="controllers/divPrinterController-v1.js"></script>
             <script src="js/custom.js"></script>
 </body>
