@@ -49,7 +49,7 @@
                             <h6 class="m-0 font-weight-bold">Client Profile List</h6>
                             <a href="https://registration.kbfdentalcare.com"
                                 class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                    class="fas fa-plus fa-sm text-white-50"></i> Register</a>
+                                    class="fas fa-plus fa-sm text-white-50"></i> Register </a>
                         </div>
                         <div class="card-body">
                             <div class="card-header py-3 d-flex justify-content-between">
