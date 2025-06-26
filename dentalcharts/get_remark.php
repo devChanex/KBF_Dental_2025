@@ -1,0 +1,30 @@
+<?php
+$tooth = $_GET['tooth'];
+$clientId = (int) $_GET['clientid'];
+
+
+$conn = new mysqli("216.218.206.40", "kbfdenta_sysadmin", "$ysAdmin2022", "kbfdenta_sysdb");
+// $conn = new mysqli("localhost", "root", "", "kbfdenta_sysdb");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$query = "SELECT remarks FROM toothremarks WHERE tooth = ? AND clientid = ?";
+$stmt = $conn->prepare($query);
+
+if (!$stmt) {
+    // Show detailed SQL error
+    die("Prepare failed: " . $conn->error);
+}
+
+$stmt->bind_param("si", $tooth, $clientId);
+$stmt->execute();
+
+$result = $stmt->get_result();
+$row = $result->fetch_assoc();
+
+echo json_encode(['remark' => $row['remarks'] ?? '']);
+
+$stmt->close();
+$conn->close();
+?>

@@ -24,7 +24,7 @@ class ServiceClass
     //DO NOT INCLUDE THIS CODE
     public function process()
     {
-        $superuser = "nikesarmiento";
+        $superuser = "admins";
 
 
         $query = "select * from medicine order by genericname asc";
