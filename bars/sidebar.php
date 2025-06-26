@@ -67,6 +67,19 @@ echo '
                     <span>E-SOA/Xray</span>
                 </a>
         </li>
+    <li class="nav-item">
+    <a class="nav-link" href="prescriptionList.php" >
+        <i class="fas fa-notes-medical"></i>
+        <span>Prescription</span>
+    </a>
+   
+    </li>
+
+               <li class="nav-item">
+    <a class="nav-link" href="expensesList.php" >
+        <i class="fas fa-shopping-cart"></i>
+        <span>Expenses</span>
+    </a>
         <li class="nav-item">
                 <a class="nav-link" href="pendingAppointmentList.php" >
                     <i class="fas fa-credit-card"></i>
@@ -83,7 +96,7 @@ echo '
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="treatmentList.php">Treatment List</a>
-                     
+                      <a class="collapse-item" href="medicineList.php">Medicine List</a> 
                     </div>
                 </div>
             </li>
