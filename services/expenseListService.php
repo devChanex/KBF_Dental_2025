@@ -66,7 +66,7 @@ class ServiceClass
               
                 <td>' . ucwords(strtolower($row["description"])) . '</td>
         
-                <td style="text-align:right">' . number_format($row["amount"], decimals: 2) . '</td>
+                <td style="text-align:right">' . number_format($row["amount"], 2) . '</td>
                
                <td align="center">
         <button 
