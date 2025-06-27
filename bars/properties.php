@@ -7,7 +7,8 @@ $hmos = ['Flexicare', 'Medicard', 'Eastwest', 'Cocolife'];
 $dentist = [
     "Dr. Kathleen B. Factoriza",
     "Dr. Kwin Elizabeth R. Factoriza",
-    "Dr. Marites San Jose"
+    "Dr. Marites San Jose",
+    "Dr. Maria Joan Umaclap"
 
 ];
 
