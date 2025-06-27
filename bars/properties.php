@@ -1,7 +1,7 @@
 <?php
-$cards = "bg-primary text-white text-lg";
+$cards = "bg-custom text-light text-lg";
 $systemname = "KBF Dental Care";
-$sidebarColor = "bg-gradient-primary";
+$sidebarColor = "bg-custom";
 $superuser = "admins";
 $hmos = ['Flexicare', 'Medicard', 'Eastwest', 'Cocolife'];
 $dentist = [

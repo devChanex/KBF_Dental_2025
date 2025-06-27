@@ -4,7 +4,7 @@ include_once("properties.php");
 session_start();
 echo '
  <!-- Sidebar -->
-        <ul class="navbar-nav ' . $sidebarColor . ' sidebar sidebar-dark  toggled" id="accordionSidebar">
+        <ul class="navbar-nav ' . $sidebarColor . ' sidebar sidebar-light  toggled" id="accordionSidebar">
 <li class="nav-item">
                 <a class="nav-link" href="basecode.php">
                 

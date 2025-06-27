@@ -128,3 +128,23 @@
 #loading {
     transition: opacity 0.3s ease;
 }
+
+.bg-custom {
+    background-color: #40e0d0 !important;
+    color: #002B5B !important;
+}
+
+#accordionSidebar,
+#accordionSidebar * {
+    color: #002B5B !important;
+}
+
+#accordionSidebar li {
+    color: #002B5B !important;
+}
+
+#accordionSidebar li:hover {
+    color: white !important;
+    background-color: white !important;
+    /* Optional: to improve visibility */
+}
