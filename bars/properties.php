@@ -12,7 +12,7 @@ $dentist = [
 
 ];
 
-$address = "0927 B.F Gomez St. Purok 3 I Ibaba Sta.Rosa Laguna";
+$address = "KBF Bldg F. Gomez St. Purok 3 Ibaba City of Sta. Rosa, Laguna";
 $contact = "Contact us: 09471027111";
 $tagline = "Bringing you, your best smile!";
 

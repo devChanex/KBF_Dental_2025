@@ -41,7 +41,7 @@ class ServiceClass
                 <div class="col-lg-6" style="text-align:right;">Bringing you, your best smile!</div>
             </div>
             <div class="row">
-                <div class="col-lg-12">0927 B.F Gomez St. Purok 3 I Ibaba Sta.Rosa Laguna</div>
+                <div class="col-lg-12">KBF Bldg F. Gomez St. Purok 3 Ibaba City of Sta. Rosa, Laguna</div>
                 <div class="col-lg-12">Contact us: 09471027111</div>
                 <hr>
                 <div class="col-lg-12" style="text-align:center;"><strong>Electronic Statement of Account - ESOA</strong></div>

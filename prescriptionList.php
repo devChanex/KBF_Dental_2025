@@ -119,7 +119,7 @@
                                     </div>
 
                                     <p style="text-align: center; color: black; margin: 0;font-size:13px;">
-                                        0927 B.F Gomez St. Purok 3 I Ibaba Sta.Rosa Laguna
+                                        KBF Bldg F. Gomez St. Purok 3 Ibaba City of Sta. Rosa, Laguna
                                     </p>
                                     <p style="text-align: center; color: black; margin: 0;font-size:13px;">
                                         <strong>Contact Number:</strong> 09471027111
