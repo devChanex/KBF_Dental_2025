@@ -316,67 +316,69 @@ function printPrescription() {
     const footer = printContents.querySelector('.modal-footer');
     if (footer) footer.remove();
 
-    const printWindow = window.open("", "", "width=800,height=600");
-    printWindow.document.write(`
+    const printWindow = window.open("", "", "width=528,height=816");
+   printWindow.document.write(`
     <html>
         <head>
             <title>Prescription</title>
+            <link rel="stylesheet" type="text/css" href="css/all.min.css">
             <style>
                 body {
-                    font - family: serif;
-                font-size: 11pt;
-                width: 4.25in;
-                height: 5.5in;
-                padding: 0.5in;
-                margin: 0;
-                box-sizing: border-box;
-                color: black;
+                    font-family: serif;
+                    font-size: 11pt;
+                    width: 5.5in;
+                    height: 8.5in;
+                    padding: 0.5in;
+                    margin: 0;
+                    box-sizing: border-box;
+                    color: black;
                 }
+  
 
                 h1, h2, h5, p {
                     margin: 0;
-                padding: 0;
+                    padding: 0;
                 }
 
                 .row {
                     display: flex;
-                flex-wrap: wrap;
-                margin-bottom: 10px;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
                 }
 
                 .col-sm-6 {
                     flex: 0 0 50%;
-                max-width: 50%;
+                    max-width: 50%;
                 }
 
                 .col-sm-12 {
                     flex: 0 0 100%;
-                max-width: 100%;
+                    max-width: 100%;
                 }
 
                 #doctor-info {
                     position: absolute;
-                bottom: 1.2cm;
-                right: 1.5cm;
-                text-align: right;
-                font-size: 11pt;
-                font-family: arial;
+                    bottom: 1.2cm;
+                    right: 1.5cm;
+                    text-align: right;
+                    font-size: 11pt;
+                    font-family: arial;
                 }
 
                 hr {
                     border: 0;
-                border-top: 1px solid black;
-                margin: 10px 0;
+                    border-top: 1px solid black;
+                    margin: 10px 0;
                 }
+                    
             </style>
         </head>
         <body>
             ${printContents.innerHTML}
         </body>
     </html>
-    `);
-
-    printWindow.document.close();
+`);
+printWindow.document.close();
     printWindow.focus();
     printWindow.print();
     printWindow.close();

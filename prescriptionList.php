@@ -113,17 +113,38 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content p-3" id="printable-area">
                                 <div class="modal-body">
-                                    <div style="text-align:center;margin:0px;">
-                                        <img src="img/kbflogo_2025-white.png"
-                                            style="max-width:250px; align-items:center" />
-                                    </div>
+                                <div style="display: flex; align-items: flex-start; gap: 20px; color: black;">
+                                    
+                                <!-- Left: Logo -->
+                                <div style="flex-shrink: 0;">
+                                    <img src="img/KBFLogo.jpg" style="max-width: 150px; height: 130px;" />
+                                </div>
 
-                                    <p style="text-align: center; color: black; margin: 0;font-size:13px;">
-                                        KBF Bldg F. Gomez St. Purok 3 Ibaba City of Sta. Rosa, Laguna
+                                <!-- Right: Text -->
+                                <div style="font-family: serif; text-align: left;">
+                                    <p style="margin: 0; font-size: 17px;"><strong>DR. KATHLEEN B. FACTORIZA</strong></p>
+                                    <p style="margin: 0; font-size: 13px;">GENERAL DENTISTRY * ORTHODONTICS</p>
+                                    <p style="margin: 0; font-size: 13px;">ORAL SURGERY * COSMETICS SURGERY</p>
+                                    <p style="margin: 0; font-size: 12px;">
+                                        <i class="fas fa-map" ></i>
+                                        KBF Bldg F. Gomez St. Purok 3<br>
+                                        Brgy. Ibaba, City of Santa Rosa, Laguna
                                     </p>
-                                    <p style="text-align: center; color: black; margin: 0;font-size:13px;">
-                                        <strong>Contact Number:</strong> 09471027111
+                                    <p style="margin: 0; font-size: 12px;">
+                                         <i class="fas fa-phone"></i>
+                                        Contact us: 09471027111<br>
+                                        Monday-Saturday: 9:00AM - 5:00PM<br>
+                                        Sunday by Appointment
                                     </p>
+                                </div>
+                            </div>
+
+
+                                   
+                                    
+                                  
+                                    
+                                   
 
 
 
@@ -135,21 +156,21 @@
                                         style="display: flex; justify-content: space-between; color: black; margin-bottom: 1px;">
                                         <div style="width: 100%;"><strong>Name:</strong> <span id="print-name"></span>
                                         </div>
-
+ <div style="width: 100%; text-align: left;">
+                                            <strong>Age/Gender:</strong> <span id="print-age"></span> <span
+                                                id="print-gender"></span>
+                                        </div>
                                     </div>
                                     <div
                                         style="display: flex; justify-content: space-between; color: black; margin-bottom: 1px;">
 
-                                        <div style="width: 100%; text-align: left;">
-                                            <strong>Age/Gender:</strong> <span id="print-age"></span> <span
-                                                id="print-gender"></span>
-                                        </div>
+                                       
                                     </div>
 
                                     <!-- Address -->
                                     <div style="color: black; margin-bottom: 1px;">
                                         <strong>Address:</strong> <span id="print-address"></span>
-                                    </div>
+                                    </div><br>
 
                                     <!-- Rx and Date Row -->
                                     <div
@@ -175,10 +196,42 @@
                                         PTR No.: _______________
                                     </div>
 
-
-                                    -->
-
                                 </div>
+                                <div style="width: 100%; text-align: center; border-bottom: 1px solid blue; line-height: 0; margin: 20px 0;">
+                                <span style="font-size: 14px; background: #fff; padding: 0 10px; color: Red;">
+                                   ! Mga dapat iwasan Pagtapos bunutan ng ngipin !
+                                </span>
+                             
+                                </div>
+                                  <div style="display: flex; justify-content: space-between;">
+  <!-- Left Copy -->
+  <div style="text-align: left; font-size: 7pt; font-family: Arial; width: 48%;">
+    <p style="margin: 0;"><font color="green">✔</font> Uminom ng inireresetang gamot ni Dentista</p>
+    <p style="margin: 0;"><font color="green">✔</font> Wag agad tanggalin ang bulak na nilagay sa<br> 
+        sugat upang mabawasan ang pag dugo nito
+    </p>
+    <p style="margin: 0;"><font color="green">✔</font> Lagyan agad ng yelo ang pisngi pagkatapos ng bunot<br>
+        upang bumaba ang pamamaga
+    </p>
+    <p style="margin: 0;"><font color="green">✔</font> Magpahinga ng isang buong araw pagkatapos ng pagkabunot</p>
+    <p style="margin: 0;"><font color="green">✔</font> Kumain ng malalamig na pagkain tulad ng icecream<br>
+        para umampat ang pagdugo
+    </p>
+  </div>
+
+  <!-- Right Copy -->
+  <div style="text-align: left;  font-size: 7pt; font-family: Arial; width: 48%;">
+    <p style="margin: 0;"><font color="red">X</font> Iwasan ang pagmumog o mapwersang pagdura pagkatapos ng bunot</p>
+    <p style="margin: 0;"><font color="red">X</font> Iwasan muna ang pag inom gamit ng straw sa unang 24 oras    </p>
+    <p style="margin: 0;"><font color="red">X</font> Tumigil sa paninigarilyo at pag inom ng alak                </p>
+    <p style="margin: 0;"><font color="red">X</font> Kumain lamang ng malalambot na pagkain                      </p>
+    <p style="margin: 0;"><font color="red">X</font> Iwasan matamaan ang sugat                                   </p>
+    <p style="margin: 0;"><font color="red">X</font> Wag kumain ng malalansa (Laman dagat, manok at itlog)       </p>
+  </div>
+</div>
+
+                                  
+
                                 <div class="modal-footer d-print-none">
 
                                     <button class="btn btn-primary" onclick="printPrescription()">Print</button>
