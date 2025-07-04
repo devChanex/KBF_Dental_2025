@@ -207,15 +207,15 @@
   <!-- Left Copy -->
   <div style="text-align: left; font-size: 7pt; font-family: Arial; width: 48%;">
     <p style="margin: 0;"><font color="green">✔</font> Uminom ng inireresetang gamot ni Dentista</p>
-    <p style="margin: 0;"><font color="green">✔</font> Wag agad tanggalin ang bulak na nilagay sa<br> 
-        sugat upang mabawasan ang pag dugo nito
+    <p style="margin: 0;"><font color="green">✔</font> Wag agad tanggalin ang bulak na nilagay sa
+                                                        sugat upang mabawasan ang pag dugo nito
     </p>
-    <p style="margin: 0;"><font color="green">✔</font> Lagyan agad ng yelo ang pisngi pagkatapos ng bunot<br>
-        upang bumaba ang pamamaga
+    <p style="margin: 0;"><font color="green">✔</font> Lagyan agad ng yelo ang pisngi pagkatapos ng bunot
+                                                        upang bumaba ang pamamaga
     </p>
     <p style="margin: 0;"><font color="green">✔</font> Magpahinga ng isang buong araw pagkatapos ng pagkabunot</p>
-    <p style="margin: 0;"><font color="green">✔</font> Kumain ng malalamig na pagkain tulad ng icecream<br>
-        para umampat ang pagdugo
+    <p style="margin: 0;"><font color="green">✔</font> Kumain ng malalamig na pagkain tulad ng icecream
+                                                        para umampat ang pagdugo
     </p>
   </div>
 
