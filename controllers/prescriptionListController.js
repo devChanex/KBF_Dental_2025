@@ -321,7 +321,7 @@ function printPrescription() {
     <html>
         <head>
             <title>Prescription</title>
-            <link rel="stylesheet" type="text/css" href="css/all.min.css">
+            <link rel="stylesheet" type="text/css" href="css/all.css">
             <style>
                 body {
                     font-family: serif;
@@ -333,8 +333,7 @@ function printPrescription() {
                     box-sizing: border-box;
                     color: black;
                 }
-  
-
+                     
                 h1, h2, h5, p {
                     margin: 0;
                     padding: 0;
@@ -379,6 +378,7 @@ function printPrescription() {
     </html>
 `);
 printWindow.document.close();
+
     printWindow.focus();
     printWindow.print();
     printWindow.close();

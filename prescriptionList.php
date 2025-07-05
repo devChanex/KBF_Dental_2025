@@ -113,30 +113,32 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content p-3" id="printable-area">
                                 <div class="modal-body">
-                                <div style="display: flex; align-items: flex-start; gap: 20px; color: black;">
+                                <div style="display: flex; align-items: flex-start; gap: 70px; color: black;">
                                     
                                 <!-- Left: Logo -->
                                 <div style="flex-shrink: 0;">
-                                    <img src="img/KBFLogo.jpg" style="max-width: 150px; height: 130px;" />
+                                    <img src="img/KBFLogo.jpg" style="max-width: 150px; height: 145px;" />
                                 </div>
 
                                 <!-- Right: Text -->
-                                <div style="font-family: serif; text-align: left;">
+                                <div style="font-family: serif; text-align: right;">
                                     <p style="margin: 0; font-size: 17px;"><strong>DR. KATHLEEN B. FACTORIZA</strong></p>
-                                    <p style="margin: 0; font-size: 13px;">GENERAL DENTISTRY * ORTHODONTICS</p>
-                                    <p style="margin: 0; font-size: 13px;">ORAL SURGERY * COSMETICS SURGERY</p>
+                                    <p style="margin: 0; font-size: 12px;">GENERAL DENTISTRY * ORTHODONTICS</p>
+                                    <p style="margin: 0; font-size: 12px;">ORAL SURGERY * COSMETICS SURGERY</p><br>
+                                   
                                     <p style="margin: 0; font-size: 12px;">
-                                        <i class="fas fa-map" ></i>
-                                        KBF Bldg F. Gomez St. Purok 3<br>
+                                        
+                                        KBF Bldg F. Gomez St. Purok 3  📌
+                                        <br>
                                         Brgy. Ibaba, City of Santa Rosa, Laguna
                                     </p>
                                     <p style="margin: 0; font-size: 12px;">
-                                         <i class="fas fa-phone"></i>
-                                        Contact us: 09471027111<br>
+                                        Contact us: 09471027111  📞</i><br>
                                         Monday-Saturday: 9:00AM - 5:00PM<br>
-                                        Sunday by Appointment
+                                        Sunday: by Appointment
                                     </p>
-                                </div>
+         
+                                 </div>
                             </div>
 
 
@@ -156,7 +158,7 @@
                                         style="display: flex; justify-content: space-between; color: black; margin-bottom: 1px;">
                                         <div style="width: 100%;"><strong>Name:</strong> <span id="print-name"></span>
                                         </div>
- <div style="width: 100%; text-align: left;">
+                                    <div style="width: 100%; text-align: right;">
                                             <strong>Age/Gender:</strong> <span id="print-age"></span> <span
                                                 id="print-gender"></span>
                                         </div>
