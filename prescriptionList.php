@@ -201,7 +201,7 @@
                                 </div>
                                 <div style="width: 100%; text-align: center; border-bottom: 1px solid blue; line-height: 0; margin: 20px 0;">
                                 <span style="font-size: 14px; background: #fff; padding: 0 10px; color: Red;">
-                                   ! Mga dapat iwasan Pagtapos bunutan ng ngipin !
+                                  <strong> ! Mga Dapat at Hindi Dapat gawin pagkatapos bunutan ng ngipin !</strong>
                                 </span>
                              
                                 </div>
