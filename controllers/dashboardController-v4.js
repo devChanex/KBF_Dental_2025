@@ -16,9 +16,12 @@ function loadEarningsBar() {
         type: 'POST',
         success: function (result) {
             var data = JSON.parse(result);
+            const maxValue = Math.max(...data.datas);
 
+            const step = 50000;
+            const roundedMax = Math.ceil(maxValue / step) * step;
 
-            chartBar("earningsbar", data.label, data.datas, 6000000, "Earnings: ");
+            chartBar("earningsbar", data.label, data.datas, roundedMax, "Earnings: ");
             //you can uncomment this for checking
             //  document.getElementById("jsResult").innerHTML=result;
         }
@@ -36,9 +39,11 @@ function loadMonthlyEarningsBar() {
         type: 'POST',
         success: function (result) {
             var data = JSON.parse(result);
+            const maxValue = Math.max(...data.datas);
+            const step = 50000;
+            const roundedMax = Math.ceil(maxValue / step) * step;
 
-
-            chartBar("monthlyearningsbar", data.label, data.datas, 1000000, "Earnings: ");
+            chartBar("monthlyearningsbar", data.label, data.datas, roundedMax, "Earnings: ");
             //you can uncomment this for checking
             //  document.getElementById("jsResult").innerHTML=result;
         }
@@ -57,8 +62,10 @@ function loadPatientsBar() {
         success: function (result) {
             var data = JSON.parse(result);
 
-
-            chartBar2("patientsbar", data.label, data.datas, 4000, "Patients: ");
+            const maxValue = Math.max(...data.datas);
+            const step = 100;
+            const roundedMax = Math.ceil(maxValue / step) * step;
+            chartBar2("patientsbar", data.label, data.datas, roundedMax, "Patients: ");
             //you can uncomment this for checking
             //  document.getElementById("jsResult").innerHTML=result;
         }
@@ -77,8 +84,10 @@ function loadMonthlyPatientsBar() {
         success: function (result) {
             var data = JSON.parse(result);
 
-
-            chartBar2("monthlypatientsbar", data.label, data.datas, 500, "Patients: ");
+            const maxValue = Math.max(...data.datas);
+            const step = 100;
+            const roundedMax = Math.ceil(maxValue / step) * step;
+            chartBar2("monthlypatientsbar", data.label, data.datas, roundedMax, "Patients: ");
             //you can uncomment this for checking
             //  document.getElementById("jsResult").innerHTML=result;
         }

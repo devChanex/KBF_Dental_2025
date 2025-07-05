@@ -31,6 +31,11 @@ class ServiceClass
         $stmt->bindParam(':g', $tsubid);
         $stmt->execute();
 
+        $query = "delete from treatmentsubpayment where tsubid=:g";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':g', $tsubid);
+        $stmt->execute();
+
         $totalFee = 0;
         $query = "select sum(price) as fee from treatmentsub where soaid=:a";
         $stmt = $this->conn->prepare($query);

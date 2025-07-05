@@ -80,7 +80,7 @@ $(document).on('click', '.edit-btn', function () {
 
 function deleteTreatment(soaid, tsubid) {
 
-    if (confirm("Do you want  delete this treatment ?")) {
+    if (confirm("Do you want  delete this treatment? Note that all of the payment for this treatment will also be deleted.")) {
         var fd = new FormData();
         fd.append('soaid', soaid);
         fd.append('tsubid', tsubid);
