@@ -199,11 +199,13 @@
                                     </div>
 
                                 </div>
-                                <div style="width: 100%; text-align: center; border-bottom: 1px solid blue; line-height: 0; margin: 20px 0;">
+                                
+                                <div style="width: 100%; text-align: center; line-height: 0; margin: 20px 0;">
                                 <span style="font-size: 14px; background: #fff; padding: 0 10px; color: Red;">
-                                  <strong> ! Mga Dapat at Hindi Dapat gawin pagkatapos bunutan ng ngipin !</strong>
+                                    <hr style="border: 1px solid black; margin: 10px 0;">
+                                  <strong>  Mga Dapat at Hindi Dapat gawin pagkatapos bunutan ng ngipin:</strong>
                                 </span>
-                             
+                              <hr style="border: 1px solid black; margin: 10px 0;">
                                 </div>
                                   <div style="display: flex; justify-content: space-between;">
   <!-- Left Copy -->
