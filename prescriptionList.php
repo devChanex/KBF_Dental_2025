@@ -113,11 +113,11 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content p-3" id="printable-area">
                                 <div class="modal-body">
-                                <div style="display: flex; align-items: flex-start; gap: 70px; color: black;">
+                                <div style="display: flex; align-items: flex-start; gap: 95px; color: black;">
                                     
                                 <!-- Left: Logo -->
                                 <div style="flex-shrink: 0;">
-                                    <img src="img/KBFLogo.jpg" style="max-width: 150px; height: 145px;" />
+                                    <img src="img/KBFLogo.jpg" style="max-width: 160px; height: 145px;" />
                                 </div>
 
                                 <!-- Right: Text -->
@@ -183,7 +183,7 @@
                                     </div>
 
                                     <!-- Prescription Medicine Section -->
-                                    <div id="presmedicine" style="color: black; margin-bottom: 30px;">
+                                    <div id="presmedicine" style="color: black; margin-bottom: 30px; margin-left: 130px;">
                                         <!-- Medicine list will be injected here -->
                                     </div>
 
@@ -200,7 +200,7 @@
 
                                 </div>
                                 
-                                <div style="width: 100%; text-align: center; line-height: 0; margin: 20px 0;">
+                                <div style="width: 100%; text-align: center; line-height: 0; margin: 10px 0;">
                                 <span style="font-size: 14px; background: #fff; padding: 0 10px; color: Red;">
                                     <hr style="border: 1px solid black; margin: 10px 0;">
                                   <strong>  Mga Dapat at Hindi Dapat gawin pagkatapos bunutan ng ngipin:</strong>

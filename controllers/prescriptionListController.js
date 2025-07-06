@@ -316,7 +316,8 @@ function printPrescription() {
     const footer = printContents.querySelector('.modal-footer');
     if (footer) footer.remove();
 
-    const printWindow = window.open("", "", "width=528,height=816");
+    const printWindow = window.open("", "", "width=557,height=797");
+
    printWindow.document.write(`
     <html>
         <head>
@@ -326,8 +327,8 @@ function printPrescription() {
                 body {
                     font-family: serif;
                     font-size: 11pt;
-                    width: 5.5in;
-                    height: 8.5in;
+                    width: 5.8in;
+                    height: 8.2in;
                     padding: 0.5in;
                     margin: 0;
                     box-sizing: border-box;
