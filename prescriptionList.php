@@ -128,12 +128,12 @@
                                    
                                     <p style="margin: 0; font-size: 12px;">
                                         
-                                        KBF Bldg F. Gomez St. Purok 3  📌
+                                        📌 KBF Bldg F. Gomez St. Purok 3  
                                         <br>
                                         Brgy. Ibaba, City of Santa Rosa, Laguna
                                     </p>
                                     <p style="margin: 0; font-size: 12px;">
-                                        Contact us: 09471027111  📞</i><br>
+                                        📞 Contact us: 09471027111  </i><br>
                                         Monday-Saturday: 9:00AM - 5:00PM<br>
                                         Sunday: by Appointment
                                     </p>
@@ -195,7 +195,7 @@
 
                                         <strong id="print-dentist">Dr. Kathleen Factoriza</strong><br>
                                         License No.: <span id="print-license">0000000</span><br>
-                                        PTR No.: _______________
+                                     
                                     </div>
 
                                 </div>
