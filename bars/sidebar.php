@@ -124,6 +124,7 @@ echo '
 <a class="collapse-item" href="clientTreatmentReport.php">Patient Treatments</a>
 <a class="collapse-item" href="incomedaterange.php">Income Statement</a>
 <a class="collapse-item" href="dailytransactionsummary.php">Daily Transaction Summary</a>
+<a class="collapse-item" href="dailytransactionsummarydentist.php">DTS Per Dentist</a>
            
         </div>
     </div>
