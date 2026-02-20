@@ -10,7 +10,7 @@ class Database
     // private $username = "root";
     // private $password = '';
 
-    private $host = "216.218.206.40";
+    private $host = "localhost";
     private $db_name = "kbfdenta_sysdb";
     private $username = "kbfdenta_sysadmin";
     private $password = '$ysAdmin2022';
