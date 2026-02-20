@@ -9,7 +9,7 @@
 
 
 //prod
-$hostname = "216.218.206.40";
+$hostname = "localhost";
 $username = "kbfdenta_sysadmin";
 $password = '$ysAdmin2022';
 $database = 'kbfdenta_sysdb';

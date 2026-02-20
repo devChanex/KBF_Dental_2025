@@ -3,7 +3,7 @@ $tooth = $_GET['tooth'];
 $clientId = (int) $_GET['clientid'];
 
 
-$conn = new mysqli("216.218.206.40", "kbfdenta_sysadmin", '$ysAdmin2022', "kbfdenta_sysdb");
+$conn = new mysqli("localhost", "kbfdenta_sysadmin", '$ysAdmin2022', "kbfdenta_sysdb");
 // $conn = new mysqli("localhost", "root", "", "kbfdenta_sysdb");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
